@@ -8,7 +8,7 @@
           </div>
           <p class="pt-4 ml-2 text-2xl">
             Deepak Bhardwaj
-            <!-- <i class="text-sm text-gray-700 cursor-pointer m-2 fas fa-map-pin"></i>
+            <!-- <i class="text-sm text-gray-70deploy.sh0 cursor-pointer m-2 fas fa-map-pin"></i>
             INDIA
             <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-code"></i>
             Computer Science -->
