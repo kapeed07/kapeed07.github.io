@@ -1,146 +1,181 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="content flex space-between">
-        <div class="w-6/12 flex flex-col">
-          <div class="w-12 h-12 flex justify-center items-center bg-indigo-500 border-indigo-500 rounded-full">
-            <p class="text-white mt-4 text-3xl">DB</p>
-          </div>
-          <p class="pt-4 ml-2 text-2xl">
-            Deepak Bhardwaj
-            <!-- <i class="text-sm text-gray-70deploy.sh0 cursor-pointer m-2 fas fa-map-pin"></i>
-            INDIA
-            <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-code"></i>
-            Computer Science -->
-          </p>
-          <hr>
-          <div class="">
-            <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-js"></i>
-            <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-vuejs"></i>
-            <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-react"></i>
-            <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-node"></i>
-          </div>
-          <!-- <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-chrome"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-mobile"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-angellist"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-award"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-prescription"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-heartbeat"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-graduation-cap"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-school"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-code"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-box-open"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-birthday-cake"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-baby"></i>
-          <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-map-pin"></i> -->
-          <!-- #B4C873 -->
-          <hr>
-          <div class="">
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-film"></i>
-              <p>vidly app</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-code-branch"></i>
-              <p>Git client | Electron</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-list-ol"></i>
-              <p>Todo | using trello api</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-images"></i>
-              <p>Giflib</p>
-            </div>
-            <div class="flex items-start">
-              <!-- <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-toggle-on"></i> -->
-              <img class="w-6 cursor-pointer m-2" src="./assets/img/coheto.png" alt="coheto">
-              <div class="flex-col">
-                <p>CoHeTo</p>
-                <p>I can help you go in presentation mode in Codepen. It gives you some extra space to work :)</p>
-              </div>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fab fa-buromobelexperte"></i>
-              <p>FlexBox Visualiser</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 far fa-id-badge"></i>
-              <p>Contact App</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-stopwatch"></i>
-              <p>Counter App</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-palette"></i>
-              <p>Color guessing game</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-dice"></i>
-              <p>Score keeper game</p>
-            </div>
-            <hr>
-            
-          </div>
-
-          <div class="">
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-check-double"></i>
-              <p>Checkbox app | Subscription tracker</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-home"></i>
-              <p>81Hut</p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-trailer"></i>
-              <p>leave application chrome extension </p>
-            </div>
-            <div class="flex items-center">
-              <i class="text-2xl text-gray-700 cursor-pointer m-2 fas fa-sitemap"></i>
-              <p>DP Visualiser</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="flex items-center flex-wrap pl-4 w-6/12 rounded-md bg-blue-200">
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-github"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-facebook"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-instagram"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-linkedin"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-medium"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-codepen"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-twitter"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-youtube"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-twitch"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-snapchat"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-skype"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-paypal"></i>
-          <i class="text-2xl text-indigo-700 cursor-pointer m-2 fab fa-patreon"></i>
-        </div> -->
+    <div class="container px-3">
+      <db-header></db-header>
+      <!-- <skills></skills>
+      <social></social> -->
+      <input
+        class="shadow-md my-4 p-2 pl-6 w-full outline-none rounded-lg"
+        type="text"
+        placeholder="Search"
+        autofocus
+        v-model="searchTerm"
+      />
+      <div class="flex flex-wrap">
+        <project-card
+          v-for="project in filteredProjects"
+          :key="project.id"
+          :project="project"
+        ></project-card>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ProjectCard from "@/components/project-card";
+// import Social from "@/components/social";
+// import Skills from "@/components/skills";
+import DbHeader from "@/components/header";
+
 export default {
-  name: 'App',
+  name: "app",
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          logo: "coheto",
+          title: "CoHeTo",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "green",
+          shade: "500",
+          icon: "fas fa-toggle-on"
+        }, {
+          id: 2,
+          logo: "",
+          title: "Contact App",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "blue",
+          shade: 500,
+          icon: "far fa-id-badge"
+        }, {
+          id: 3,
+          logo: "",
+          title: "Giflib",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-images"
+        }, {
+          id: 4,
+          logo: "",
+          title: "Timer",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "indigo",
+          shade: 500,
+          icon: "fas fa-stopwatch"
+        }, {
+          id: 5,
+          logo: "",
+          title: "FlexBox Visualiser",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "red",
+          shade: 500,
+          icon: "fab fa-buromobelexperte"
+        }, {
+          id: 6,
+          logo: "",
+          title: "Score keeper game",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "orange",
+          shade: 500,
+          icon: "fas fa-dice"
+        }, {
+          id: 7,
+          logo: "",
+          title: "Color guessing game",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "teal",
+          shade: 500,
+          icon: "fas fa-palette"
+        }, {
+          id: 8,
+          logo: "",
+          title: "Counter App",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "orange",
+          shade: 500,
+          icon: "fas fa-stopwatch"
+        }, {
+          id: 9,
+          logo: "",
+          title: "Checkbox app | Subscription tracker",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "blue",
+          shade: 500,
+          icon: "fas fa-check-double"
+        }, {
+          id: 10,
+          logo: "",
+          title: "81Hut",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-home"
+        }, {
+          id: 11,
+          logo: "",
+          title: "Todo | using trello api",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "red",
+          shade: 500,
+          icon: "fas fa-list-ol"
+        }, {
+          id: 12,
+          logo: "",
+          title: "Git client | Electron",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "green",
+          shade: 500,
+          icon: "fas fa-code-branch"
+        }, {
+          id: 13,
+          logo: "",
+          title: "vidly app",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-film"
+        }, {
+          id: 14,
+          logo: "",
+          title: "leave application chrome extension",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "yellow",
+          shade: 500,
+          icon: "fas fa-trailer"
+        }, {
+          id: 15,
+          logo: "",
+          title: "DP Visualiser",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "purple",
+          shade: 500,
+          icon: "fas fa-sitemap"
+        }
+      ],
+      searchTerm: ""
+    }
+  },
+  computed: {
+    filteredProjects() {
+      return this.projects.filter(project => project.title.toLowerCase().includes(this.searchTerm.toLowerCase()));
+    }
+  },
   components: {
-    
+    ProjectCard,
+    // Social,
+    // Skills,
+    DbHeader
   }
-}
+};
 </script>
 
 <style>
-.container {
-  width: 80%;
-  margin: 50px auto;
-}
 body {
   background-color: #ebf8ff;
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Nunito', sans-serif;
 }
-
+/* #7034AC */
 </style>
