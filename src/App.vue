@@ -5,7 +5,7 @@
       <!-- <skills></skills>
       <social></social> -->
       <input
-        class="shadow-md my-4 p-2 pl-6 w-full outline-none rounded-lg"
+        class="shadow-md my-4 p-2 pl-6 w-full outline-none rounded-lg border border-gray-100"
         type="text"
         placeholder="Search"
         autofocus
@@ -174,7 +174,7 @@ export default {
 
 <style>
 body {
-  background-color: #ebf8ff;
+  /* background-color: #ebf8ff; */
   font-family: 'Nunito', sans-serif;
 }
 /* #7034AC */
