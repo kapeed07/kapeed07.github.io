@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container px-3">
+    <div class="px-3">
       <db-header></db-header>
       <!-- <skills></skills>
       <social></social> -->

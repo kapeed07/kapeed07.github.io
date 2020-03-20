@@ -1,7 +1,7 @@
 <template>
-  <div class="container w-full">
+  <div class="w-full sm:w-1/2 sm:px-1 md:p-3 md:w-1/3">
     <div
-      :class="`w-full mb-4 shadow-lg hover:shadow-2xl rounded-md bg-${project.color}-${project.shade} p-6`"
+      :class="`mb-4 shadow-lg hover:shadow-2xl rounded-md bg-${project.color}-${project.shade} p-6`"
     >
       <div class="flex-col">
         <div class="flex items-center">
@@ -20,7 +20,7 @@
 
           </div>
             
-          <p class="capitalize text-white font-semibold text-4xl">
+          <p class="capitalize text-white font-semibold text-4xl sm:text-2xl md:text-2xl">
             {{project.title}}
           </p>
         </div>
