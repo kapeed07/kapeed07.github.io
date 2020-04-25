@@ -5,10 +5,8 @@
       <social></social>
     </div>
     <div class="flex flex-col h-full items-center justify-between">
-      <div class="content flex w-full pl-3 pr-3 mt-10">
-        <!-- <div class="box p-3 bg-gray-200 h-20 w-40">
-hh
-        </div> -->
+      <div class="content m-10">
+      <project-card v-for="project in projects" :project="project" :key="project.id"></project-card>
 
       </div>
 
@@ -25,7 +23,7 @@ hh
 </template>
 
 <script>
-// import ProjectCard from "@/components/project-card";
+import ProjectCard from "@/components/project-card";
 import Social from "@/components/social";
 // import Skills from "@/components/skills";
 // import DbHeader from "@/components/header";
@@ -33,132 +31,132 @@ import Social from "@/components/social";
 export default {
   name: "app",
   data() {
-    // return {
-    //   projects: [
-    //     {
-    //       id: 1,
-    //       logo: "coheto",
-    //       title: "CoHeTo",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "green",
-    //       shade: "500",
-    //       icon: "fas fa-toggle-on"
-    //     }, {
-    //       id: 2,
-    //       logo: "",
-    //       title: "Contact App",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "blue",
-    //       shade: 500,
-    //       icon: "far fa-id-badge"
-    //     }, {
-    //       id: 3,
-    //       logo: "",
-    //       title: "Giflib",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "pink",
-    //       shade: 500,
-    //       icon: "fas fa-images"
-    //     }, {
-    //       id: 4,
-    //       logo: "",
-    //       title: "Timer",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "indigo",
-    //       shade: 500,
-    //       icon: "fas fa-stopwatch"
-    //     }, {
-    //       id: 5,
-    //       logo: "",
-    //       title: "FlexBox Visualiser",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "red",
-    //       shade: 500,
-    //       icon: "fab fa-buromobelexperte"
-    //     }, {
-    //       id: 6,
-    //       logo: "",
-    //       title: "Score keeper game",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "orange",
-    //       shade: 500,
-    //       icon: "fas fa-dice"
-    //     }, {
-    //       id: 7,
-    //       logo: "",
-    //       title: "Color guessing game",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "teal",
-    //       shade: 500,
-    //       icon: "fas fa-palette"
-    //     }, {
-    //       id: 8,
-    //       logo: "",
-    //       title: "Counter App",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "orange",
-    //       shade: 500,
-    //       icon: "fas fa-stopwatch"
-    //     }, {
-    //       id: 9,
-    //       logo: "",
-    //       title: "Checkbox app | Subscription tracker",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "blue",
-    //       shade: 500,
-    //       icon: "fas fa-check-double"
-    //     }, {
-    //       id: 10,
-    //       logo: "",
-    //       title: "81Hut",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "pink",
-    //       shade: 500,
-    //       icon: "fas fa-home"
-    //     }, {
-    //       id: 11,
-    //       logo: "",
-    //       title: "Todo | using trello api",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "red",
-    //       shade: 500,
-    //       icon: "fas fa-list-ol"
-    //     }, {
-    //       id: 12,
-    //       logo: "",
-    //       title: "Git client | Electron",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "green",
-    //       shade: 500,
-    //       icon: "fas fa-code-branch"
-    //     }, {
-    //       id: 13,
-    //       logo: "",
-    //       title: "vidly app",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "pink",
-    //       shade: 500,
-    //       icon: "fas fa-film"
-    //     }, {
-    //       id: 14,
-    //       logo: "",
-    //       title: "leave application chrome extension",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "yellow",
-    //       shade: 500,
-    //       icon: "fas fa-trailer"
-    //     }, {
-    //       id: 15,
-    //       logo: "",
-    //       title: "DP Visualiser",
-    //       desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
-    //       color: "purple",
-    //       shade: 500,
-    //       icon: "fas fa-sitemap"
-    //     }
-    //   ],
-    //   searchTerm: ""
-    // }
+    return {
+      projects: [
+        {
+          id: 1,
+          logo: "coheto",
+          title: "CoHeTo",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "green",
+          shade: "500",
+          icon: "fas fa-toggle-on"
+        }, {
+          id: 2,
+          logo: "",
+          title: "Contact App",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "blue",
+          shade: 500,
+          icon: "far fa-id-badge"
+        }, {
+          id: 3,
+          logo: "",
+          title: "Giflib",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-images"
+        }, {
+          id: 4,
+          logo: "",
+          title: "Timer",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "indigo",
+          shade: 500,
+          icon: "fas fa-stopwatch"
+        }, {
+          id: 5,
+          logo: "",
+          title: "FlexBox Visualiser",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "red",
+          shade: 500,
+          icon: "fab fa-buromobelexperte"
+        }, {
+          id: 6,
+          logo: "",
+          title: "Score keeper game",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "orange",
+          shade: 500,
+          icon: "fas fa-dice"
+        }, {
+          id: 7,
+          logo: "",
+          title: "Color guessing game",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "teal",
+          shade: 500,
+          icon: "fas fa-palette"
+        }, {
+          id: 8,
+          logo: "",
+          title: "Counter App",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "orange",
+          shade: 500,
+          icon: "fas fa-stopwatch"
+        }, {
+          id: 9,
+          logo: "",
+          title: "Checkbox app | Subscription tracker",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "blue",
+          shade: 500,
+          icon: "fas fa-check-double"
+        }, {
+          id: 10,
+          logo: "",
+          title: "81Hut",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-home"
+        }, {
+          id: 11,
+          logo: "",
+          title: "Todo | using trello api",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "red",
+          shade: 500,
+          icon: "fas fa-list-ol"
+        }, {
+          id: 12,
+          logo: "",
+          title: "Git client | Electron",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "green",
+          shade: 500,
+          icon: "fas fa-code-branch"
+        }, {
+          id: 13,
+          logo: "",
+          title: "vidly app",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "pink",
+          shade: 500,
+          icon: "fas fa-film"
+        }, {
+          id: 14,
+          logo: "",
+          title: "leave application chrome extension",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "yellow",
+          shade: 500,
+          icon: "fas fa-trailer"
+        }, {
+          id: 15,
+          logo: "",
+          title: "DP Visualiser",
+          desc: "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+          color: "purple",
+          shade: 500,
+          icon: "fas fa-sitemap"
+        }
+      ],
+      searchTerm: ""
+    }
   },
   computed: {
     // filteredProjects() {
@@ -166,7 +164,7 @@ export default {
     // }
   },
   components: {
-    // ProjectCard,
+    ProjectCard,
     Social,
     // Skills,
     // DbHeader
@@ -190,9 +188,9 @@ export default {
   color: #363537;
 }
 .curved {  
-  position: absolute;
+  position: fixed;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   background: #DA3E52;
   /* filter: drop-shadow(2px 4px 1px #8cd867); */
   height: 200px;
@@ -204,7 +202,7 @@ export default {
 }
 .footer {
   background: #363537;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   bottom: 0;
 }
