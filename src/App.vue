@@ -8,9 +8,15 @@
       <social></social>
       <skills></skills>
       <div v-for="project in projects" :key="project.id">
-        <a href="">
-          <p :class="[project.status ? '' : 'line-through text-gray-300']">{{ project.title }}</p>
-        </a>
+        <div class="flex items-center" :class="[project.status ? '' : 'line-through text-gray-300']">
+          <img
+            v-if="project.logo"
+            :src="getLogoUrl(project.logo)"
+            class="w-5"
+            :alt="project.logo">
+          <i v-else :class="project.icon"></i>
+          <p class="ml-2">{{ project.title }}</p>
+        </div>
       </div>
     </div>
     
@@ -173,6 +179,11 @@ export default {
   mounted() {},
   computed: {},
   watch: {},
+  methods: {
+    getLogoUrl(logo) {
+      return require(`@/assets/img/${logo}.png`);
+    }
+  },
   components: {
     Social,
     Skills
