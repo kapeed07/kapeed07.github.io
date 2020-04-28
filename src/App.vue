@@ -18,7 +18,23 @@
           <p class="ml-2">{{ project.title }}</p>
         </div>
       </div>
-    </div>
+      <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="result" data-user="kapeed07" data-slug-hash="OJygBgK" style="height: 161px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="OJygBgK">
+  <span>See the Pen <a href="https://codepen.io/kapeed07/pen/OJygBgK">
+  OJygBgK</a> by Deepak Bhardwaj  (<a href="https://codepen.io/kapeed07">@kapeed07</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="result" data-user="kapeed07" data-slug-hash="ZEbyRgr" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="_profile-image-rotate">
+  <span>See the Pen <a href="https://codepen.io/kapeed07/pen/ZEbyRgr">
+  _profile-image-rotate</a> by Deepak Bhardwaj  (<a href="https://codepen.io/kapeed07">@kapeed07</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+
+      </div>
+
+
+    
     
     <!-- footer -->
     <div class="flex items-center justify-center">
