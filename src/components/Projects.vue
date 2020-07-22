@@ -1,20 +1,25 @@
 <template>
   <div>
-    <div
-      v-for="project in projects"
-      :key="project._id"
-      class="flex items-center p-5 border border-gray-300 m-2 rounded-md"
-      :class="[project.status ? '' : 'line-through text-gray-300']"
-    >
-      <img
-        v-if="project.logo"
-        :src="getImageUrl(project.logo, 'png')"
-        class="w-5"
-        :alt="project.logo"
-      />
-      <i v-else :class="project.icon"></i>
-      <p class="ml-2">{{ project.title }}</p>
-    </div>
+    <template v-for="project in projects">
+      <div
+        v-if="project.status"
+        :key="project._id"
+        class="bg-white p-5 border border-gray-400 m-2 rounded-md opacity-100"
+        :class="[project.status ? '' : 'line-through text-gray-300']"
+      >
+        <a :href="project.url" class="flex items-center" target="blank">
+          <img
+            v-if="project.logo"
+            :src="getImageUrl(project.logo, 'png')"
+            class="w-5"
+            :alt="project.logo"
+          />
+          <i v-else :class="project.icon"></i>
+          <p class="ml-2">{{ project.title }}</p>
+          <p class="ml-2">{{ project.desc }}</p>
+        </a>
+      </div>
+    </template>
   </div>
 </template>
 

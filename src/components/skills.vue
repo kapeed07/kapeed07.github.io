@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="p-10">
     <i v-for="skill in skills" :key="skill._id" :class="`text-2xl text-gray-700 m-2 ${skill.icon}`"></i>
   </div>
 </template>

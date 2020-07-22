@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center items-center w-full mt-20 mb-10">
     <img class="logo rounded-full mr-5" :src="getImageUrl('kapeed07', 'jpg')" />
-    <p class="text-2xl">Deepak Bhardwaj</p>
+    <p class="text-3xl text-gray-800">Deepak Bhardwaj</p>
   </div>
 </template>
 

@@ -20,6 +20,7 @@ export default {
   padding: 0;
   margin: 0;
   outline: none;
+  background-color: rgb(249, 250, 250);
   font-family: "Nunito", sans-serif;
 }
 </style>

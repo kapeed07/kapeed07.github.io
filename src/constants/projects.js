@@ -1,13 +1,17 @@
 import icons from "@/constants/icons";
 
+const url =
+  process.env.NODE_ENV === "development" ? "https://kapeed07.github.io" : "";
+
 const projects = [
   {
     _id: 1,
     logo: "coheto",
     title: "CoHeTo",
     desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with",
     color: "green",
+    url: `${url}/coheto`,
     shade: "500",
     icon: icons.TOGGLE,
     status: true,
@@ -16,9 +20,9 @@ const projects = [
     _id: 2,
     logo: "",
     title: "Contact App",
-    desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+    desc: "contact list with search functionality",
     color: "blue",
+    url: `${url}/contact-app`,
     shade: 500,
     icon: icons.BADGE,
     status: true,
@@ -30,6 +34,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "pink",
+    url: `${url}`,
     shade: 500,
     icon: icons.IMAGES,
     status: false,
@@ -38,9 +43,9 @@ const projects = [
     _id: 4,
     logo: "",
     title: "Timer",
-    desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+    desc: "Digital timer for 10 seconds",
     color: "indigo",
+    url: `https://codepen.io/kapeed07/pen/VJvOeW`,
     shade: 500,
     icon: icons.STOPWATCH,
     status: true,
@@ -49,9 +54,9 @@ const projects = [
     _id: 5,
     logo: "",
     title: "FlexBox Visualiser",
-    desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+    desc: "Playground for flexbox",
     color: "red",
+    url: `${url}/flexbox`,
     shade: 500,
     icon: icons.BUROMOBEL,
     status: true,
@@ -60,9 +65,9 @@ const projects = [
     _id: 6,
     logo: "",
     title: "Score keeper game",
-    desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+    desc: "Score keeper game",
     color: "orange",
+    url: "https://codepen.io/kapeed07/details/jwbNjZ",
     shade: 500,
     icon: icons.DICE,
     status: true,
@@ -71,9 +76,9 @@ const projects = [
     _id: 7,
     logo: "",
     title: "Color guessing game",
-    desc:
-      "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
+    desc: "Color guessing game",
     color: "teal",
+    url: "https://codepen.io/kapeed07/pen/QgbWoX",
     shade: 500,
     icon: icons.PALETTE,
     status: true,
@@ -85,6 +90,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "orange",
+    url: `${url}`,
     shade: 500,
     icon: icons.STOPWATCH,
     status: false,
@@ -96,6 +102,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "blue",
+    url: `${url}`,
     shade: 500,
     icon: icons.DOUBLECHECK,
     status: false,
@@ -107,6 +114,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "pink",
+    url: `${url}`,
     shade: 500,
     icon: icons.HOME,
     status: false,
@@ -118,6 +126,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "red",
+    url: `${url}`,
     shade: 500,
     icon: icons.LIST,
     status: false,
@@ -129,6 +138,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "green",
+    url: `${url}`,
     shade: 500,
     icon: icons.CODEBRANCH,
     status: false,
@@ -140,6 +150,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "pink",
+    url: `${url}`,
     shade: 500,
     icon: icons.FILM,
     status: false,
@@ -151,6 +162,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "yellow",
+    url: `${url}`,
     shade: 500,
     icon: icons.TRAILER,
     status: false,
@@ -162,6 +174,7 @@ const projects = [
     desc:
       "CoHeTo helps you go in presentation mode on Codepen and provides you some extra space to work with.",
     color: "purple",
+    url: `${url}`,
     shade: 500,
     icon: icons.SITEMAP,
     status: false,
